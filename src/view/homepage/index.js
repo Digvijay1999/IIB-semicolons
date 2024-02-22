@@ -10,7 +10,7 @@ import Prompts from '../../components/promts';
 
 export default function HomePage() {
     return (
-        <StyledMainDiv>
+        <StyledMainDiv id='stlyedMainDiv'>
             <StyledLeftDiv>
                 <StlyedFileUploadDiv>
                     <InputFileUpload />
@@ -19,9 +19,9 @@ export default function HomePage() {
                     <IconLabelButtons />
                 </div>
             </StyledLeftDiv>
-            <StyledRightDiv>
-                <Prompts />
-                <PromptInput />
+            <StyledRightDiv id='right div'>
+                <Prompts/>
+                <PromptInput/>
             </StyledRightDiv>
         </StyledMainDiv >
     )

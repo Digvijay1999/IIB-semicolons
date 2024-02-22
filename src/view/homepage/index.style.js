@@ -3,10 +3,10 @@ import { TextareaAutosize as BaseTextareaAutosize } from '@mui/base/TextareaAuto
 
 export const StyledMainDiv = styled.div`
 width: 100%;
-height: 95vh;
+height: 90vh;
 background-color: antiquewhite;
 display: flex;
-margin: 0;
+position: fixed
 `
 
 export const StyledLeftDiv = styled.div`
@@ -25,6 +25,7 @@ display: flex;
 flex-direction: column;
 align-items: center; 
 justify-content: center;
+// position: relative
 `
 export const StlyedFileUploadDiv = styled.div`
 outline: 2px;
@@ -36,4 +37,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 outline-style: dotted;
+margin:5%;
+padding:15%
 `

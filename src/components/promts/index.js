@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Prompts(props) {
+export default function Prompts({PromptComp}) {
 
     let chatbotInteraction = [
         "Chatbot: Welcome to the Investment Banker Chatbot! I can help you analyze annual reports of companies. Please upload the annual report you'd like to analyze.",
@@ -46,9 +46,9 @@ export default function Prompts(props) {
     ];
 
     return (
-        <div style={{ overflow: "scroll" }}>
+        <div style={{ overflow: "scroll", overflowX: "hidden", margin:'5%', marginBottom:'0' }}>
             {chatbotInteraction.map((interaction, index) => (
-                <div key={index} style={{ fontSize: '20px' }}  >
+                <div key={index} style={{padding:"1%"}}  >
                     {interaction}
                 </div>
             ))}
